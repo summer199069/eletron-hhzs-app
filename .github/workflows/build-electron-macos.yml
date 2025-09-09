@@ -23,7 +23,7 @@ jobs:
           node-version: '20'  # 推荐使用 LTS，比如 18、20
 
       - name: Install dependencies
-        run: npm ci  # 或 yarn install --frozen-lockfile
+        run: npm install  # 或 yarn install --frozen-lockfile
 
       - name: Build Electron App (macOS)
         run: npm run build:mac  # 或 npx electron-builder
